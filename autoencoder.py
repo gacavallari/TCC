@@ -117,11 +117,11 @@ print("\nTest Loss="+str(lossTest))
 #extrai labels do cojunto de teste no formato que a funcao cross_val_score necessita (one_hot=False)
 mnist_ = mnist_data.read_data_sets(DATA_DIR_MNIST, one_hot=False, reshape=False, validation_size=0)
 labels = mnist_.test.labels 
-print ('\ndimensao da matriz de labels: '+ str(labels.shape))
+print ('\ndimensao da matriz de labels: '+ str(labels.shape)) # (10000,)
 
 #extrai codigos
 codigos = sess.run(C1, feed_dict=testData)
-print ('\ndimensao da matriz de codigos: '+ str(codigos.shape))
+print ('\ndimensao da matriz de codigos: '+ str(codigos.shape)) # (10000, 128)
 
 
 # estimate the accuracy of a linear kernel support vector machine, 
@@ -129,7 +129,7 @@ print ('\ndimensao da matriz de codigos: '+ str(codigos.shape))
 clf = svm.SVC(kernel='linear', C=1)
 scores = cross_val_score(clf, codigos, labels, cv=10)
 print ('\nscores: ' + str(scores))
-print("\nAccuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+print("\nAccuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2)) 
 
 
 
