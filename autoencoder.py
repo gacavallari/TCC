@@ -129,7 +129,7 @@ print ('\ndimensao da matriz de codigos: '+ str(codigos.shape)) # (10000, 128)
 clf = svm.SVC(kernel='linear', C=1)
 scores = cross_val_score(clf, codigos, labels, cv=10)
 print ('\nscores: ' + str(scores))
-print("\nAccuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2)) 
+print("\nAccuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2)) # Accuracy: 0.92 (+/- 0.05)
 
 
 
