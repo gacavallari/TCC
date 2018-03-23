@@ -21,7 +21,7 @@ lossTest = 0.00661
 
 ![alt text](fashion_mnist_512_0.00661.png)
 
-#######################################################################################################################
+######################################################################
 
 Treino: MNIST original. Validação: conjunto de testes do MNIST Fashion. Camada oculta 1 de **128 neurônios**, 10000 iterações. 
 
