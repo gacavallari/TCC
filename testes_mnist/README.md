@@ -1,4 +1,5 @@
 Treino: MNIST. Validação: conjunto de testes do MNIST. Camada oculta 1 de **128 neurônios**, 10000 iterações. 
+
 lossTraining = 0.00318. lossTest = 0.00348
 
 ![alt text](mnist_128_0.00318_0.00348.png)
