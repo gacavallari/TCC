@@ -11,7 +11,7 @@
 
 
 128
-![alt text](fashion_128_0.01874.png)
+![alt text](fashion_128_0.01346.png)
 
 
 64 
